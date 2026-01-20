@@ -1,4 +1,5 @@
 import { Callout, Cards, Card } from 'nextra/components'
+import { AgentTable } from '../../components/AgentTable'
 
 # 에이전트 개요
 
@@ -79,17 +80,7 @@ model: opus
 
 ### 1. 언제 에이전트를 사용할까?
 
-| 상황 | 추천 에이전트 |
-|------|--------------|
-| 새 기능 계획 | `planner` |
-| 시스템 설계 | `architect` |
-| 테스트 작성 | `tdd-guide` |
-| 코드 리뷰 | `code-reviewer` |
-| 보안 검토 | `security-reviewer` |
-| 빌드 오류 | `build-error-resolver` |
-| E2E 테스트 | `e2e-runner` |
-| 코드 정리 | `refactor-cleaner` |
-| 문서 업데이트 | `doc-updater` |
+<AgentTable />
 
 ### 2. 에이전트 설치
 

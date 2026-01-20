@@ -1,8 +1,15 @@
 import { Callout } from 'nextra/components'
+import { DownloadMarkdown } from '../../components/DownloadMarkdown'
+import { agentContents } from '../../components/agentContents'
 
 # code-reviewer (코드 리뷰)
 
 품질, 보안 및 유지보수성을 위해 코드를 검토하는 **시니어 코드 리뷰어**입니다.
+
+<DownloadMarkdown
+  filename="code-reviewer.md"
+  content={agentContents['code-reviewer']}
+/>
 
 ## 메타데이터
 
@@ -13,7 +20,7 @@ tools: Read, Grep, Glob, Bash
 model: opus
 ```
 
-<Callout type="info" emoji="👀">
+<Callout type="info">
   코드 작성 또는 수정 직후 사용하세요. **모든 코드 변경에 반드시 사용해야 합니다.**
 </Callout>
 
@@ -117,6 +124,6 @@ const apiKey = process.env.API_KEY;  // ✓ 좋음
 - AI 통합 오류 처리 검사
 - 캐시 폴백 동작 검증
 
-<Callout type="warning" emoji="💡">
+<Callout type="warning">
   **기억하세요**: 이슈 수정 방법의 **구체적인 예시**를 포함하세요. 문제만 지적하지 말고 해결책도 제시하세요.
 </Callout>
