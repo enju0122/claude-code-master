@@ -486,7 +486,7 @@ html[class~="dark"] .feature-card {
 
 .btn-gradient {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  color: white !important;
   border: none;
   padding: 12px 32px;
   border-radius: 30px;
@@ -496,7 +496,7 @@ html[class~="dark"] .feature-card {
 
 .btn-outline {
   background: transparent;
-  color: white;
+  color: white !important;
   border: 2px solid white;
   padding: 12px 32px;
   border-radius: 30px;
