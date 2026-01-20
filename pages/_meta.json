@@ -34,9 +34,5 @@
   "examples": {
     "title": "📦 예시",
     "type": "page"
-  },
-  "contributing": {
-    "title": "🤝 기여하기",
-    "type": "page"
   }
 }
