@@ -514,13 +514,6 @@ html[class~="dark"] .feature-card:hover {
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-}
-
-.btn-gradient:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
 }
 
 .btn-outline {
@@ -531,12 +524,6 @@ html[class~="dark"] .feature-card:hover {
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-outline:hover {
-  background: white;
-  color: #667eea;
 }
 
 .section-divider {
