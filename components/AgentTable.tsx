@@ -66,7 +66,7 @@ export function AgentTable() {
                 <a
                   href={agent.href}
                   style={{
-                    color: '#0000CD',
+                    color: '#18181b',
                     textDecoration: 'none',
                     fontFamily: 'monospace'
                   }}

@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
       fontFamily: '"Noto Sans KR", sans-serif',
       fontSize: '1.3rem',
       fontWeight: 700,
-      color: '#0000CD'
+      color: '#18181b'
     }}>
       Claude Code 마스터
     </span>
@@ -66,7 +66,7 @@ const config: DocsThemeConfig = {
   },
   footer: {
     text: (
-      <span style={{ fontFamily: '"Noto Sans KR", sans-serif', color: '#0000CD' }}>
+      <span style={{ fontFamily: '"Noto Sans KR", sans-serif', color: '#71717a' }}>
         Claude Code 마스터 - {new Date().getFullYear()}
       </span>
     )
@@ -76,8 +76,8 @@ const config: DocsThemeConfig = {
     defaultTheme: 'light',
     storageKey: 'nextra-theme'
   },
-  primaryHue: 230,
-  primarySaturation: 100,
+  primaryHue: 240,
+  primarySaturation: 5,
   search: {
     placeholder: '검색...',
   },

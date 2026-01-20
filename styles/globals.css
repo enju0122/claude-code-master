@@ -2,18 +2,20 @@
 
 /* 기본 폰트 및 색상 설정 */
 :root {
-  /* 파란 볼펜 잉크 색상 */
-  --pen-blue: #0000CD;
-  --pen-blue-light: #4169E1;
+  /* 모던 다크 색상 */
+  --primary: #18181b;
+  --primary-light: #27272a;
+  --secondary: #3f3f46;
+  --muted: #71717a;
 
-  /* 빨간 강조 색상 */
-  --red-ink: #FF0000;
-  --red-ink-dark: #CC0000;
+  /* 강조 색상 */
+  --accent: #18181b;
+  --accent-light: #27272a;
 
   /* 배경 */
-  --paper-bg: #FAFAFA;
-  --paper-bg-dark: #2D2D2D;
-  --paper-line: #E8E8E8;
+  --paper-bg: #fafafa;
+  --paper-bg-dark: #18181b;
+  --border-color: #e4e4e7;
 
   /* 폰트 - 가독성 좋은 폰트 */
   --font-main: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -46,7 +48,7 @@ html[class~="dark"] body {
 /* 제목 스타일 */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-title) !important;
-  color: var(--pen-blue) !important;
+  color: var(--primary) !important;
   position: relative;
 }
 
@@ -56,12 +58,12 @@ html[class~="dark"] h3,
 html[class~="dark"] h4,
 html[class~="dark"] h5,
 html[class~="dark"] h6 {
-  color: #6B8DD6 !important;
+  color: #e4e4e7 !important;
 }
 
 h1 {
   font-size: 2.5rem !important;
-  border-bottom: 3px solid var(--pen-blue);
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 0.5rem;
 }
 
@@ -88,29 +90,29 @@ html[class~="dark"] th {
   color: #E0E0E0;
 }
 
-/* 강조 텍스트 - 빨간펜 스타일 */
+/* 강조 텍스트 */
 strong, b {
-  color: var(--red-ink) !important;
+  color: var(--primary) !important;
   font-family: var(--font-title) !important;
+  font-weight: 600;
 }
 
 em, i {
-  color: var(--pen-blue-light);
-  font-style: normal;
-  text-decoration: underline wavy var(--pen-blue-light);
+  color: var(--secondary);
+  font-style: italic;
 }
 
 /* 링크 스타일 */
 a {
-  color: var(--pen-blue) !important;
+  color: var(--primary) !important;
   text-decoration: none;
-  border-bottom: 2px dashed var(--pen-blue);
-  transition: all 0.2s;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.15s ease;
 }
 
 a:hover {
-  color: var(--red-ink) !important;
-  border-bottom-color: var(--red-ink);
+  color: var(--secondary) !important;
+  border-bottom-color: var(--secondary);
 }
 
 /* 코드 블록 */
@@ -140,15 +142,15 @@ html[class~="dark"] code {
 
 /* 인라인 코드 */
 :not(pre) > code {
-  color: var(--pen-blue);
-  background: rgba(0, 0, 205, 0.1);
-  border: 1px solid rgba(0, 0, 205, 0.2);
+  color: var(--primary);
+  background: #f4f4f5;
+  border: 1px solid var(--border-color);
 }
 
 /* 인용문 스타일 */
 blockquote {
-  border-left: 4px solid var(--pen-blue) !important;
-  background: rgba(0, 0, 205, 0.05);
+  border-left: 3px solid var(--border-color) !important;
+  background: #f4f4f5;
   padding: 1rem;
   margin: 1rem 0;
   font-style: normal !important;
@@ -172,8 +174,8 @@ ol li {
 
 ol li::before {
   content: counter(item) ". ";
-  color: var(--red-ink);
-  font-weight: bold;
+  color: var(--muted);
+  font-weight: 600;
   font-family: var(--font-title);
 }
 
@@ -186,19 +188,20 @@ table {
 }
 
 th {
-  background: var(--pen-blue) !important;
+  background: var(--primary) !important;
   color: white !important;
   padding: 0.75rem;
   text-align: left;
+  font-weight: 500;
 }
 
 td {
-  border: 1px dashed #CCC;
+  border: 1px solid var(--border-color);
   padding: 0.75rem;
 }
 
 tr:nth-child(even) {
-  background: rgba(0, 0, 205, 0.03);
+  background: #f4f4f5;
 }
 
 /* 사이드바 스타일 */
@@ -225,8 +228,8 @@ nav a:hover {
 input[type="search"],
 input[type="text"] {
   font-family: var(--font-main) !important;
-  border: 2px solid var(--pen-blue) !important;
-  border-radius: 0 !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px !important;
 }
 
 /* 네비게이션 버튼 */
@@ -250,24 +253,24 @@ input[type="text"] {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--pen-blue);
-  border-radius: 0;
+  background: #d4d4d8;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--pen-blue-light);
+  background: #a1a1aa;
 }
 
 /* 카드 스타일 */
 .card {
-  border: 2px solid var(--pen-blue);
-  border-radius: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
 }
 
 /* 배너 */
 .nextra-banner {
   font-family: var(--font-main) !important;
-  background: var(--red-ink) !important;
+  background: var(--primary) !important;
 }
 
 /* 푸터 */
@@ -278,22 +281,22 @@ footer {
 /* 손글씨 밑줄 효과 */
 .underline-hand {
   text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: var(--red-ink);
+  text-decoration-color: var(--muted);
 }
 
 /* 하이라이트 효과 */
 mark, .highlight {
-  background: linear-gradient(180deg, transparent 60%, #FFFF00 60%);
+  background: #fef3c7;
   padding: 0 0.2rem;
+  border-radius: 2px;
 }
 
 /* 페이지 제목 영역 */
 .nextra-content > h1:first-child {
   margin-top: 2rem;
   padding: 1rem;
-  background: linear-gradient(135deg, rgba(0, 0, 205, 0.05) 0%, transparent 100%);
-  border-left: 5px solid var(--pen-blue);
+  background: #f4f4f5;
+  border-left: 3px solid var(--primary);
 }
 
 /* 목차 스타일 */
@@ -413,105 +416,89 @@ mark, .highlight {
 
 /* 랜딩 페이지 전용 스타일 */
 .landing-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 8s ease infinite;
+  background: #fafafa;
 }
 
 .landing-hero-dark {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 8s ease infinite;
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  transition: all 0.3s ease;
-}
-
-.glass-card:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.glass-card-dark {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #18181b;
 }
 
 .feature-card {
-  background: white;
-  border-radius: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #e4e4e7;
+  transition: all 0.15s ease;
+}
+
+.feature-card:hover {
+  border-color: #a1a1aa;
+  background: #f4f4f5;
 }
 
 html[class~="dark"] .feature-card {
-  background: #1e1e2e;
+  background: #27272a;
+  border-color: #3f3f46;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.gradient-text-alt {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+html[class~="dark"] .feature-card:hover {
+  background: #3f3f46;
+  border-color: #52525b;
 }
 
 .btn-gradient {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white !important;
-  border: none;
-  padding: 12px 32px;
-  border-radius: 30px;
-  font-weight: 600;
+  background: #18181b;
+  color: #fafafa !important;
+  border: 1px solid #27272a;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
   cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-gradient:hover {
+  background: #27272a;
 }
 
 .btn-outline {
   background: transparent;
-  color: white !important;
-  border: 2px solid white;
-  padding: 12px 32px;
-  border-radius: 30px;
-  font-weight: 600;
+  color: #18181b !important;
+  border: 1px solid #e4e4e7;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
   cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-outline:hover {
+  border-color: #a1a1aa;
+  background: #f4f4f5;
 }
 
 .section-divider {
-  height: 100px;
-  background: linear-gradient(180deg, transparent 0%, #f8f9fa 100%);
+  height: 1px;
+  background: #e4e4e7;
 }
 
 html[class~="dark"] .section-divider {
-  background: linear-gradient(180deg, transparent 0%, #1a1a1a 100%);
-}
-
-.stat-number {
-  font-size: 3rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: #3f3f46;
 }
 
 .icon-box {
-  width: 60px;
-  height: 60px;
-  border-radius: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 1.4rem;
+  background: #18181b;
+}
+
+html[class~="dark"] .icon-box {
+  background: #fafafa;
+  color: #18181b;
 }
 
 .delay-100 { animation-delay: 0.1s; }
@@ -527,4 +514,16 @@ html[class~="dark"] .section-divider {
 .landing-page h3 {
   border: none !important;
   color: inherit !important;
+}
+
+.landing-page a {
+  border-bottom: none !important;
+}
+
+.landing-page .btn-dark {
+  color: white !important;
+}
+
+.landing-page .btn-dark:hover {
+  color: white !important;
 }
