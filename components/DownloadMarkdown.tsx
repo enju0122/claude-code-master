@@ -23,9 +23,9 @@ export function DownloadMarkdown({ filename, content }: DownloadMarkdownProps) {
     <div style={{
       marginBottom: '2rem',
       padding: '1rem 1.5rem',
-      background: 'linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%)',
-      borderRadius: '12px',
-      border: '1px solid #d0d9f0'
+      background: '#fafafa',
+      borderRadius: '10px',
+      border: '1px solid #e5e5e5'
     }}>
       <div style={{
         display: 'flex',
@@ -40,18 +40,25 @@ export function DownloadMarkdown({ filename, content }: DownloadMarkdownProps) {
             display: 'inline-flex',
             alignItems: 'center',
             gap: '0.5rem',
-            padding: '0.75rem 1.25rem',
-            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-            color: 'white',
-            border: 'none',
-            borderRadius: '8px',
-            fontSize: '0.95rem',
-            fontWeight: 600,
+            padding: '0.6rem 1.1rem',
+            background: '#18181b',
+            color: '#fafafa',
+            border: '1px solid #27272a',
+            borderRadius: '6px',
+            fontSize: '0.875rem',
+            fontWeight: 500,
             cursor: 'pointer',
-            fontFamily: '"Noto Sans KR", sans-serif'
+            fontFamily: '"Noto Sans KR", -apple-system, sans-serif',
+            transition: 'all 0.15s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#27272a'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = '#18181b'
           }}
         >
-          <Download size={18} />
+          <Download size={16} />
           마크다운 다운로드
         </button>
 
@@ -59,15 +66,17 @@ export function DownloadMarkdown({ filename, content }: DownloadMarkdownProps) {
           display: 'flex',
           alignItems: 'center',
           gap: '0.5rem',
-          color: '#5a6a8a',
-          fontSize: '0.9rem'
+          color: '#71717a',
+          fontSize: '0.85rem'
         }}>
-          <Lightbulb size={16} style={{ color: '#f59e0b' }} />
+          <Lightbulb size={15} style={{ color: '#a1a1aa' }} />
           <span>다운로드 후 <code style={{
-            background: '#e2e8f0',
+            background: '#f4f4f5',
             padding: '0.15rem 0.4rem',
             borderRadius: '4px',
-            fontSize: '0.85rem'
+            fontSize: '0.8rem',
+            color: '#3f3f46',
+            border: '1px solid #e4e4e7'
           }}>~/.claude/agents/</code> 폴더에 복사하여 사용하세요</span>
         </div>
       </div>

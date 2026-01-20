@@ -82,17 +82,24 @@ export function AgentTable() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     gap: '0.25rem',
-                    padding: '0.4rem 0.75rem',
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '6px',
-                    fontSize: '0.8rem',
+                    padding: '0.35rem 0.7rem',
+                    background: '#18181b',
+                    color: '#fafafa',
+                    border: '1px solid #27272a',
+                    borderRadius: '5px',
+                    fontSize: '0.75rem',
                     fontWeight: 500,
                     cursor: 'pointer',
+                    transition: 'all 0.15s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = '#27272a'
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = '#18181b'
                   }}
                 >
-                  <Download size={14} />
+                  <Download size={13} />
                   .md
                 </button>
               </td>
