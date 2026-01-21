@@ -158,6 +158,12 @@ claude-code-master/
 
 MIT License
 
+## 참고 자료
+
+이 사이트의 내용은 [Everything Claude Code](https://github.com/anthropics/courses/tree/master/claude-code)를 참고하여 작성되었습니다.
+
+- 한글 버전: [https://github.com/revfactory/everything-claude-code](https://github.com/revfactory/everything-claude-code)
+
 ## 링크
 
 - [사이트](https://claudecode-master.netlify.app)
