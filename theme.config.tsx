@@ -57,7 +57,7 @@ const config: DocsThemeConfig = {
         <link rel="canonical" href={canonicalUrl} />
 
         {/* 파비콘 */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/everything-claude-coding.png" />
 
         {/* Open Graph */}
